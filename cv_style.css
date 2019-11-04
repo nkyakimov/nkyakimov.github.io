@@ -118,10 +118,10 @@ p{
 	background-color:white;
 	border-left:black solid 1px;
 	border-right:black solid 1px;
-	width:60vw;
+	width:55%;
 	height:85vh;
-	left:15vw;
-	top:10%
+	left:20%;
+	top:10%;
 }
 
 th[cell]{
