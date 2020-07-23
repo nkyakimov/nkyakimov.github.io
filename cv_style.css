@@ -50,13 +50,15 @@
 
 
 #text{
-	position:fixed;
 	color:white;
 	left:10px;
 	mix-blend-mode: difference;
-	font-size:200pt;
-	top:45%;
-	transform: translate(0px);
+	font-size:100pt;
+	margin: 0;
+  	position: absolute;
+  	top: 50%;
+  	-ms-transform: translateY(-50%);
+  	transform: translateY(-50%);
 	transition: all 1.5s linear;
 	z-index:5;
 }
