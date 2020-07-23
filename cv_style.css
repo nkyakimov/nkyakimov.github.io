@@ -54,8 +54,8 @@
 	color:white;
 	left:10px;
 	mix-blend-mode: difference;
-	font-size:92pt;
-	top:42%;
+	font-size:120pt;
+	top:45%;
 	transform: translate(0px);
 	transition: all 1.5s linear;
 	z-index:5;
