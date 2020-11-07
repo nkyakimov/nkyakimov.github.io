@@ -124,6 +124,7 @@ p{
 	height:85vh;
 	left:20%;
 	top:10%;
+	overflow-y: scroll;
 }
 
 th[cell]{
