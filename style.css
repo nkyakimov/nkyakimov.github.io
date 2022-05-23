@@ -6,10 +6,28 @@
     --large: 1.5rem;
     --larger: 1.8rem;
     --biggest: 2.2rem;
+    --info-margin: 40px;
+}
+
+@media (orientation: portrait)  {
+    :root {
+        --info-margin: 20px !important;
+    }
+    .main {
+        flex-direction: column !important;
+    }
+    .side-div{
+        overflow-y: unset !important;
+        padding-bottom: 30px !important;
+    }
+    .main-div{
+        overflow-y: unset !important;
+        padding-top: 30px !important;
+    }
 }
 
 body {
-    font-family: 'Raleway' !important;
+    font-family: 'Raleway', serif !important;
     font-size: var(--regular);
 }
 
@@ -21,8 +39,10 @@ body {
 }
 
 .main {
+    background-color: white;
     display: flex;
     flex: 1;
+    flex-direction: row;
     height: 100%;
     width: 100%
 }
@@ -36,7 +56,7 @@ body {
     row-gap: 20px;
     align-content: center;
     align-items: center;
-    min-width: 600px;
+    min-width: 30%;
     flex: 0;
     padding: 10px;
 }
@@ -70,7 +90,7 @@ body {
 .profile-text {
     line-height: var(--larger);
     margin-top: 10px;
-    text-overflow: wrap;
+    text-wrap: normal;
 }
 
 .contact-list {
@@ -147,10 +167,14 @@ body {
     font-weight: 600;
 }
 
-.line {
-    color: black;
-    width: calc(100% - 20px);
+hr.line {
+    display: block;
     height: 1px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: calc(100% - 20px);
+    border-top: 1px solid black;
 }
 
 hr.line-green {
@@ -176,7 +200,7 @@ hr.line-green {
 }
 
 .main-div-item-value {
-    margin-left: 40px;
+    margin-left: var(--info-margin);
     margin-top: 20px;
 }
 
@@ -217,7 +241,7 @@ li {
 }
 
 .work-list-item-info {
-    margin-left: 40px;
+    margin-left: var(--info-margin);
 }
 
 .work-list-item-company {
