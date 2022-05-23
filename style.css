@@ -9,9 +9,9 @@
     --info-margin: 40px;
 }
 
-@media (orientation: portrait)  {
+@media only screen and (max-width: 1200px) {
     :root {
-        --info-margin: 20px !important;
+        --info-margin: 10px !important;
     }
     .main {
         flex-direction: column !important;
@@ -24,6 +24,9 @@
         overflow-y: unset !important;
         padding-top: 30px !important;
     }
+    .main-div-item-value ul {
+        padding-left: 10px !important;
+    }
 }
 
 body {
@@ -32,10 +35,15 @@ body {
 }
 
 body {
+    min-width: 400px;
     height: 100%;
     width: 100%;
     padding: 0;
     margin: 0;
+}
+
+.main-div-item-value ul {
+    padding-left: 20px;
 }
 
 .main {
@@ -156,14 +164,19 @@ body {
 }
 
 .center-list-item {
+    justify-content: space-between;
     margin-top: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
+.center-list-item-value {
+    width: 65%;
+}
+
 .center-list-item-name {
-    width: 30%;
+    width: 25%;
     font-weight: 600;
 }
 
