@@ -27,6 +27,12 @@
     .main-div-item-value ul {
         padding-left: 10px !important;
     }
+    .main-div-item-value {
+        margin-top: 30px !important;
+    }
+    .work-list {
+        row-gap: 30px !important;
+    }
 }
 
 body {
