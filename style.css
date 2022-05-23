@@ -1,0 +1,253 @@
+:root {
+    --regular: 1rem;
+    --regular-plus: 1.1rem;
+    --medium: 1.2rem;
+    --very-large: 2rem;
+    --large: 1.5rem;
+    --larger: 1.8rem;
+    --biggest: 2.2rem;
+}
+
+body {
+    font-family: 'Raleway' !important;
+    font-size: var(--regular);
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    width: 100%
+}
+
+.side-div {
+    font-size: var(--regular-plus);
+    overflow-y: auto;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-content: center;
+    align-items: center;
+    min-width: 600px;
+    flex: 0;
+    padding: 10px;
+}
+
+.main-div {
+    justify-content: space-between;
+    color: white;
+    background-color: #303236;
+    flex-grow: 2;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-content: center;
+    align-items: center;
+    padding: 10px 30px 10px 30px;
+}
+
+.profile {
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+}
+
+.profile-title {
+    text-transform: uppercase;
+    font-size: var(--large);
+    font-weight: 600;
+}
+
+.profile-text {
+    line-height: var(--larger);
+    margin-top: 10px;
+    text-overflow: wrap;
+}
+
+.contact-list {
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.contact-list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.contact-list-item-name {
+    width: 30%;
+    font-weight: 600;
+}
+
+.work-title {
+    margin-top: 10px;
+    font-size: var(--larger);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.name {
+    font-size: var(--biggest);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.main-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    row-gap: 10px;
+}
+
+.pic {
+    max-height: 220px;
+    max-width: 220px;
+    border-radius: 50%;
+}
+
+.center-list {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    row-gap: 10px;
+    width: 100%;
+}
+
+.center-list-title {
+    text-transform: uppercase;
+    font-size: var(--large);
+    font-weight: 600;
+}
+
+.center-list-item {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.center-list-item-name {
+    width: 30%;
+    font-weight: 600;
+}
+
+.line {
+    color: black;
+    width: calc(100% - 20px);
+    height: 1px;
+}
+
+hr.line-green {
+    display: block;
+    height: 1px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: calc(100% - 20px);
+    border-top: 1px solid rgb(64, 153, 91);
+}
+
+.main-div-item-text {
+    font-size: var(--medium);
+    line-height: var(--biggest);
+}
+
+.main-div-item {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.main-div-item-value {
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.main-div-item-name {
+    text-transform: uppercase;
+    font-size: var(--large);
+    font-weight: 600;
+}
+
+li {
+    margin-top: 10px;
+}
+
+.work-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 15px;
+}
+
+.work-list-item-info ul {
+    padding-left: 20px !important;
+}
+
+.work-list-item-position {
+    text-transform: uppercase;
+    font-size: var(--medium);
+    font-weight: 600;
+}
+
+.work-list-item-company-time {
+    font-size: var(--regular-plus);
+}
+
+.work-list-item-company-name {
+    font-size: var(--regular-plus);
+    font-weight: 600;
+}
+
+.work-list-item-info {
+    margin-left: 40px;
+}
+
+.work-list-item-company {
+    margin-top: 10px;
+    column-gap: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

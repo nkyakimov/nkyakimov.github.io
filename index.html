@@ -1,136 +1,154 @@
 <!DOCTYPE html>
+<html style="height: 100%; width: 100%; padding: 0; margin: 0" lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nikola Yakimov</title>
+</head>
+<body>
+<div class="main">
+    <div class="side-div">
+        <div class="main-info">
+            <img class="pic" src="me_small.jpg" alt="Avatar">
+            <div class="name">Nikola Yakimov</div>
+            <div class="work-title">Software Engineer</div>
+        </div>
+        <div class="contact-list">
+            <div class="contact-list-item">
+                <div class="contact-list-item-name">Mobile</div>
+                <div class="contact-list-item-value">+359882751044</div>
+            </div>
+            <div class="contact-list-item">
+                <div class="contact-list-item-name">Email</div>
+                <div class="contact-list-item-value">niki84292@gmail.com</div>
+            </div>
+            <div class="contact-list-item">
+                <div class="contact-list-item-name">GitHub</div>
+                <div class="contact-list-item-value">
+                    <a href="https://github.com/nkyakimov" target="_blank">GitHub Repo</a>
+                </div>
+            </div>
+            <div class="contact-list-item">
+                <div class="contact-list-item-name">Location</div>
+                <div class="contact-list-item-value">Sofia, Bulgaria</div>
+            </div>
+        </div>
+        <hr class="line">
+        <div class="profile">
+            <div class="profile-title">Profile</div>
+            <div class="profile-text">
+                I am a software developer with good problem-solving skills and experience in creating and designing
+                quality software within short time frames. Currently, I am in the third year of my bachelor's pursuit.
+            </div>
+        </div>
+        <hr class="line">
+        <div class="center-list">
+            <div class="center-list-title">Education</div>
+            <div class="center-list-item">
+                <div class="center-list-item-name">Bachelor</div>
+                <div class="center-list-item-value">FMI, Sofia University<br>Computer Science<br>2018 - Present</div>
+            </div>
+            <div class="center-list-item">
+                <div class="center-list-item-name">High School</div>
+                <div class="center-list-item-value">High School of Mathematics, Varna<br>IT with English and French<br>2013
+                    - 2018
+                </div>
+            </div>
+        </div>
 
-<html>
-	<head>
-		<title>My CV</title>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="cv_style.css">
-		<script src="cv_script.js"> </script>
-	</head>
-	<body style="font-family:Arial;" onload="setTimeout(main,300);">
-	
-		<div id="white"></div>
-		<div id="black"></div>
-		<div id="text">WELCOME</div>
-		<div id="bar_line">
-			<a style="color:white" href="index.html">
-				My CV
-			</a>
-		</div>
-		<div id="menu_icon" onclick="menu(this)">
-		  <div class="menu_bar" id="bar1"></div>
-		  <div class="menu_bar" id="bar2"></div>
-		  <div class="menu_bar" id="bar3"></div>
-		</div>
-		<table style="display:none;" id="menu_table">
-			<tr onclick="window.location='index.html'">
-				<th cell>
-					Personal Details
-				</th>
-			</tr>
-			<tr onclick="window.location='cv_exp.html'">
-				<th cell>
-					Work Experience
-				</th>
-			</tr>
-			<tr onclick="window.location='cv_educ.html'">
-				<th cell>
-					Education
-				</th>
-			</tr>
-			<tr onclick="window.location='cv_lang.html'">
-				<th cell>
-					Languages
-				</th>
-			</tr>
-			<tr onclick="window.location='cv_skills.html'">
-				<th cell>
-					Skills
-				</th>
-			</tr>
-		</table>
-		<div id="main_text">
-			<table id="main_table">
-				<tr>
-					<th id="pic" >
-						<img src="small.jpg"></img>
-					</th>
-					<th id="name">
-						<h1>Nikola<br>Yakimov</h1>
-					</th>
-				</tr>
-			</table>
-			<hr width="80%">
-			<table id="info">
-				<tr>
-					<th id="left">
-						Full name:
-					</th>
-					<th id="right">
-						Nikola Krasenov Yakimov
-					</th>
-				</tr>
-				<tr>
-					<th id="left">
-						Date of birth:
-					</th>
-					<th id="right">
-						25.06.1999
-					</th>
-				</tr>
-				<tr>
-					<th id="left">
-						Originaly from:
-					</th>
-					<th id="right">
-						<a id="VN" onmouseover="VN()"  onmouseleave="VN_out()"  onclick="window.open('https://bg.wikipedia.org/wiki/%D0%92%D0%B0%D1%80%D0%BD%D0%B0')">Varna, Bulgaria</a>
-					</th>
-				</tr>
-				<tr>
-					<th id="left">
-						Currently living:
-					</th>
-					<th id="right">
-						Sofia, Bulgaria
-					</th>
-				</tr>
-				<tr>
-					<th id="left">
-						Phone:
-					</th>
-					<th id="right">
-						<a id="Phone" onmouseover="Phone()"  onmouseleave="Phone_out()">0882751044</a>
-					</th>
-				</tr>
-				<tr>
-					<th id="left">
-						Email:
-					</th>
-					<th id="right">
-						niki84292@gmail.com
-					</th>
-			</table>
-		</div>
-		<div id="side">
-			<div style="display:none;" id="VN_info">
-				<table width="100%" height="100%">
-					<tr>
-						<img style="padding-bottom:10px;" width="100%" src="http://www.10brutes.com/wp-content/uploads/2019/08/cropped-%D0%94%D1%80%D0%B0%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D0%BD-%D1%82%D0%B5%D0%B0%D1%82%D1%8A%D1%80-%D0%92%D0%B0%D1%80%D0%BD%D0%B0-1200x630.jpg">
-					</tr>
-					<tr>
-						Ва̀рна е най-големият град в Североизточна България, разположен по бреговете на Черно море и Варненското езеро и е административен център на едноименните община и област. Той е най-големият град в Северна България и по българското Черноморие. <br>
-						За още инфо, кликнете сега.
-					</tr>
-					<tr>
-						<img style="padding-top:10px;" width="100%" src="https://visit.varna.bg/media/cache/05/94/thumb7__DSC3277.jpg">
-					</tr>
-				</table>
-			</div>
-			<div style="display:none;" id="Phone_info">
-				<img width="100%" src="https://media3.giphy.com/media/em4Ue35YUZ2DOVSagj/giphy.gif">
-			</div>
-		</div>
-	
-	</body>
+    </div>
+    <div class="main-div">
+        <div class="main-div-item">
+            <div class="main-div-item-name">Skills</div>
+            <div class="main-div-item-value">
+                <ul>
+                    <li>Java EE and Spring</li>
+                    <li>SQL mainly with Oracle DB and Liquibase</li>
+                    <li>Angular and Typescript</li>
+                    <li>Algorithms and Data Structures</li>
+                    <li>Interest in Cyber Security</li>
+                    <li>Great problem-solving skills</li>
+                    <li>Good experience with Bash, Unix OS and Docker</li>
+                    <li>Worked with Kafka and AWS</li>
+                </ul>
+            </div>
+        </div>
+        <hr class="line-green">
+        <div class="main-div-item">
+            <div class="main-div-item-name">Work Experience</div>
+            <div class="main-div-item-value">
+                <div class="work-list">
+                    <div class="work-list-item">
+                        <div class="work-list-item-position">JUNIOR SOFTWARE ENGINEER</div>
+                        <div class="work-list-item-info">
+                            <div class="work-list-item-company">
+                                <div class="work-list-item-company-name">Paysafe Group Ltd.</div>
+                                <div>|</div>
+                                <div class="work-list-item-company-time">05.2021 - Present</div>
+                            </div>
+                            <ul>
+                                <li>Integrated and maintained new KYC providers.</li>
+                                <li>Worked closely on KYC integration for new merchants.</li>
+                                <li>Designed and built both FE and BE projects from start to production, with little to
+                                    no observation at all.
+                                </li>
+                                <li>Worked on improving user experience.</li>
+                                <li>Daily communication with teams from opposite sides of the world.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="work-list-item">
+                        <div class="work-list-item">
+                            <div class="work-list-item-position">SOFTWARE ENGINEER INTERN</div>
+                            <div class="work-list-item-info">
+                                <div class="work-list-item-company">
+                                    <div class="work-list-item-company-name">Paysafe Group Ltd.</div>
+                                    <div>|</div>
+                                    <div class="work-list-item-company-time">02.2021 - 04.2021</div>
+                                </div>
+                                <ul>
+                                    <li>Developed an internal survey tool for the company.</li>
+                                    <li>First big experience with Docker and running both BE, FE and DB.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="work-list-item">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <hr class="line-green">
+        <div class="main-div-item">
+            <div class="main-div-item-name">Team Spirit</div>
+            <div class="main-div-item-value main-div-item-text">
+                For me being a team player is very important. If someone has a problem then that's the team's problem.
+                In a team, we all have a voice that will be heard, and we all pass on our knowledge. This is my idea of a
+                good team.
+            </div>
+        </div>
+        <hr class="line-green">
+        <div class="main-div-item">
+            <div class="main-div-item-name">Other Information</div>
+            <div class="main-div-item-value main-div-item-text">
+                Good knowledge of the Spring framework and a big interest in learning new things, in my free time I tend
+                to broaden my knowledge mostly in Spring Security. I am a follower of the Clean Code Principles. I would
+                consider myself a fast learner. I have taken
+                Python courses at the University of Michigan. Besides my interests in programming, I am also interested
+                in music and sports
+            </div>
+        </div>
+        <hr class="line-green">
+        <div class="main-div-item">
+            <div class="main-div-item-name">Languages</div>
+            <div class="main-div-item-value main-div-item-text">
+                English - proficient, French - intermediate
+            </div>
+        </div>
+    </div>
+</div>
+</body>
 </html>
-
