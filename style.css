@@ -76,7 +76,7 @@ body {
 }
 
 .main-div {
-    justify-content: space-between;
+    justify-content: flex-start;
     color: white;
     background-color: #303236;
     flex-grow: 2;
